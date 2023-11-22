@@ -79,9 +79,8 @@
                         <td class="node-cell center">{{$transfer|bf}}</td>
                         <td class="node-cell center">
                             <div class="progress">
-                                <div style="width: {{$TransLeftPercent}}%" :class="'progress-bar progress-bar-' + toSSBar('{{TransClassName $TransLeftPercent}}')">
-                                    <small>{{TransLeft $stats.Max $transfer}} / {{$TransLeftPercent}} %</small>
-                                </div>
+                                <span style="width: {{$TransLeftPercent}}%" :class="'progress-bar progress-bar-' + toSSBar('{{TransClassName $TransLeftPercent}}')"></span>
+                                <small>{{TransLeft $stats.Max $transfer}} / {{$TransLeftPercent}} %</small>
                             </div>
                         </td>
                     </tr>
